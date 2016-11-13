@@ -1,16 +1,18 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Header from './Header'
+import Navbar from './Navbar'
 import Footer from './Footer'
-import Petrol from './Petrol'
+import Departures from './Departures'
+import Arrivals from './Arrivals'
 
 var App = React.createClass({
   render: function(){
 
     return (
       <div id="container">
-        <Header />
-        <Petrol />
+        <Navbar />
+        <Departures />
+        <Arrivals />
         <Footer />
       </div>
     )

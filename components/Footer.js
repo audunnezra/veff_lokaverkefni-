@@ -8,10 +8,10 @@ var Footer = React.createClass({
     var blar = {backgroundColor:'blue', color:'white'}
     return (
       <div>
-        <Col sm={12} md={12} lg={12} style={graenn}>1</Col>
-        <Col sm={3} md={3} lg={3} style={raudur}>2</Col>
-        <Col sm={3} md={3} lg={3} style={fjolublar}>3</Col>
-        <Col sm={3} md={3} lg={3} style={blar}>4</Col>
+        <Col xs={6} sm={6} md={3} lg={3} style={graenn}>footerObj1</Col>
+        <Col xs={6} sm={6} md={3} lg={3} style={raudur}>footerObj2</Col>
+        <Col xs={6} sm={6} md={3} lg={3} style={fjolublar}>footerObj3</Col>
+        <Col xs={6} sm={6} md={3} lg={3} style={blar}>footerObj4</Col>
       </div>
     );
   }
