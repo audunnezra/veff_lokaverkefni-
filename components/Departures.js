@@ -26,18 +26,18 @@ var Departures = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>Departures</h1>
+        <h1>DEPARTURES</h1>
         {!this.state.departureData.results ?
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"></img>
+          <img src="https://d13yacurqjgara.cloudfront.net/users/12755/screenshots/1037374/hex-loader2.gif"></img>
           :
         <Table striped bordered condensed hover>
         <thead>
           <tr>
-            <th>Date</th>
-            <th>Flight Number</th>
-            <th>Destination</th>
-            <th>ETA</th>
-            <th>Status</th>
+            <th>DATE</th>
+            <th>FLIGHT NO.</th>
+            <th>GOING TO:</th>
+            <th>ETD</th>
+            <th>STATUS</th>
           </tr>
         </thead>
         <tbody>

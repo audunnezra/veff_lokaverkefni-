@@ -1,5 +1,6 @@
 import React from 'react'
 import {Nav, Navbar, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
+import { Link } from 'react-router'
 var NavBar = React.createClass({
   render: function(){
     return (
@@ -12,7 +13,7 @@ var NavBar = React.createClass({
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
-        <NavItem eventKey={1} href="#">Link</NavItem>
+        <NavItem eventKey={1} href="#/Arrivals">Arrivals</NavItem>
         <NavItem eventKey={2} href="#">Link</NavItem>
         <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
           <MenuItem eventKey={3.1}>Action</MenuItem>

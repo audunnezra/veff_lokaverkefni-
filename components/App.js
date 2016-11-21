@@ -1,9 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { Router, Route, hashHistory, Link } from 'react-router'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import Departures from './Departures'
-import Arrivals from './Arrivals'
 
 var App = React.createClass({
   render: function(){
@@ -11,8 +10,7 @@ var App = React.createClass({
     return (
       <div id="container">
         <Navbar />
-        <Departures />
-        <Arrivals />
+          <Link to="/Arrivals">arrivals</Link>
         <Footer />
       </div>
     )
