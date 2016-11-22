@@ -10,7 +10,7 @@ var App = React.createClass({
     return (
       <div id="container">
         <Navbar />
-          <Link to="/Arrivals">arrivals</Link>
+          {this.props.children}
         <Footer />
       </div>
     )

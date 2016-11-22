@@ -8,7 +8,7 @@ render: function(){
   return(
   <Router history={hashHistory}>
     <Route path="/" component={App}>
-      <Route path="/Arrivals" component={Arrivals}/>
+      <Route path="/Arrivals" component={Arrivals} />
     </Route>
   </Router>
   );
