@@ -8,16 +8,18 @@ var NavBar = React.createClass({
       <Navbar inverse collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="#">React-Bootstrap</a>
+        <a href="/">Home</a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
         <LinkContainer to={{pathname:'/Arrivals'}}>
-        <NavItem eventKey={1}>Arrivals</NavItem>
+          <NavItem eventKey={1}>Arrivals</NavItem>
         </LinkContainer>
-        <NavItem eventKey={2} href="#">Link</NavItem>
+        <LinkContainer to={{pathname:'/Departures'}}>
+          <NavItem eventKey={2}>Departures</NavItem>
+        </ LinkContainer>
         <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
           <MenuItem eventKey={3.1}>Action</MenuItem>
           <MenuItem eventKey={3.2}>Another action</MenuItem>

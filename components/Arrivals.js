@@ -6,7 +6,7 @@ var Arrivals = React.createClass({
   getArrivalData: function() {
     $.ajax({
       url: 'http://apis.is/flight?language=en&type=arrivals',
-      cache: false,
+      cache: true,
       type: 'GET',
       dataType: 'json',
       success: function(incomingData) {
