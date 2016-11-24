@@ -24,8 +24,13 @@ module.exports = {
 	exclude: /node_modules/,
 	query: {
 	  presets: ['react','es2015','react-hmre']
-	}
-      }
+	   }
+  },
+  { test: /\.css$/, loader: "style-loader!css-loader" },
+  { test: /\.png$/, loader: "url-loader?limit=100000" },
+  { test: /\.jpg$/, loader: "file-loader" }
+
+
     ]
   }
 }
